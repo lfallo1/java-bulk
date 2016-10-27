@@ -1,0 +1,99 @@
+@CHARSET "ISO-8859-1";
+
+div.tooltip {   
+	position: absolute;           
+	text-align: center;           
+	font: 35px sans-serif;
+	color: white;
+	font-weight: bolder;
+	pointer-events: none;         
+}
+
+div.tooltip .glyphicon{
+	font-size: 20px;
+}
+
+#chart {
+	text-align: center;
+}
+
+#filter-toggle{
+	border-radius: 0px;
+	border: 1px solid gray;
+	padding: 10px;
+	width: 100%;
+	font-size: 35px;
+	font-weight: bolder;
+	box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#chart-type-list{
+	text-align: center;
+}
+
+#chart-type-list .glyphicon{
+	font-size: 40px;
+}
+
+#chart-type-list .active, #chart-type-list #bar-graph{
+	padding: 10.5px;
+	border-radius: 0px;
+}
+
+#chart-type-list #pie-chart{
+	padding: 13px;
+	border-radius: 0px;
+}
+
+#chart-type-list #pie-chart.active{
+	padding: 13px !important;
+}
+
+#chart-type-panel .panel-body{
+	padding: 0px;
+}
+
+#legend{
+	text-align: center;
+}
+
+#subcharts{
+	text-align: center;
+}
+
+#subchart-message{
+	text-align: center;
+}
+
+#subchart-panel-body{
+	padding: 0px;
+	margin-bottom: -20px;
+}
+
+#legend-categories-sm{
+	width: 230px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+#legend-categories-lg{
+	width: 300px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+#legend-categories-selection{
+	background: #428bca;
+	color: white;
+	font-family: sans-serif;
+	padding: 5px 0px 5px 5px;
+	margin-bottom: 4px;
+}
+
+#legend-categories-others{
+	background: gray;
+	color: white;
+	font-family: sans-serif;
+	padding: 5px 0px 5px 5px;
+	margin-bottom: 4px;
+}

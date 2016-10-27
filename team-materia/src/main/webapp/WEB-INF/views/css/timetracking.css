@@ -1,0 +1,8 @@
+@CHARSET "ISO-8859-1";
+
+#loading-image img{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+}

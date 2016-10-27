@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+
+.jumbotron{
+	margin-top: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand{
+	color: #D4D4D4;
+}

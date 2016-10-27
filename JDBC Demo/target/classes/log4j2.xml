@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+  <!-- Redirect messages to console -->
+  <!-- Defines the console appender, stdout -->
+  <Appenders>
+    <Console name="CONSOLE" target="SYSTEM_OUT">
+       <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %C{1}:%L - %m%n" />
+    </Console>
+    
+    <!--  Define JDBC appender -->
+    <JDBC name="DatabaseAppender" tableName="Logs">
+    <ConnectionFactory class="com.catalyst.cycle.jdbc_demo.utils.ConnectionFactory" method="getDatabaseConnection" />
+       
+       <Column name="eventDate" isEventTimestamp="true" />
+       <Column name="level" pattern="%level" />
+       <Column name="logger" pattern="%logger" />
+       <Column name="message" pattern="%message" />
+    </JDBC>
+  </Appenders>
+    
+  <Loggers>
+  
+  <!-- 3rdparty Loggers -->
+  <!--
+     loggers of category 'org.springframework' will only log messages of level "debug" or higher;
+     if you retrieve Loggers by using the class name (e.g. Logger.getLogger(AClass.class))
+     and if AClass is part of the org.springframework.core package, it will belong to this category
+   -->
+  <logger name="org.springframework.core">
+    <level value="error" />
+  </logger>
+
+  <logger name="org.springframework.beans">
+    <level value="error" />
+  </logger>
+
+  <logger name="org.springframework.context">
+    <level value="error" />
+  </logger>
+
+  <logger name="org.springframework.web">
+    <level value="error" />
+  </logger>
+  <!-- Root level is the lowest level that is displayed -->
+  <!-- If specifying level for Appenders they must be at or above root level -->
+    <Root level="TRACE">
+       <AppenderRef ref="CONSOLE" level="FATAL"/>
+       <AppenderRef ref="DatabaseAppender" level="DEBUG"/>
+    </Root>
+  </Loggers>
+</Configuration>

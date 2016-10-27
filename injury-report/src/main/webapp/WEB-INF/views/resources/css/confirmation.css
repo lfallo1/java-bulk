@@ -1,0 +1,6 @@
+@CHARSET "ISO-8859-1";
+
+#submit-success .glyphicon{
+	color: green;
+	margin-right: 5px;
+}

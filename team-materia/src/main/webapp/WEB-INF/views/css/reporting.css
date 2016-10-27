@@ -1,0 +1,79 @@
+@CHARSET "ISO-8859-1";
+
+#reportList .glyphicon {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+
+#report-placeholder .glyphicon {
+    font-size: 25px;
+    display: block;
+    text-align: center;
+}
+
+.td-user .glyphicon{
+	font-size: 20px !important;
+	display: inline !important;
+	padding-right: 5px;
+}
+
+#report-placeholder .absentHours {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#refresh > a{
+    width: 100%;
+}
+
+#absent-report-table .alert-danger{
+    border-radius: 0px;
+}
+
+.userPopoverData:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: darkblue;
+}
+
+
+.popover {
+	font-size: 14px;
+	background: white;
+	border-radius: 0;
+	color:black;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.popover h5{
+	display: inline;
+	font-weight: bolder;
+}
+
+.popover .popover-title {
+	background-color: #428bca;
+	border: 0px;
+	border-radius: 0px;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: white;
+}
+
+.td-user{
+	width: 50%;
+}
+
+#select-lists .input-group-addon{
+	top: 0;
+}
+
+table th{
+	color: gray;
+	text-align: center;
+}
+
+table td{
+font-size: 17px;
+}
